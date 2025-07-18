@@ -55,6 +55,25 @@ namespace gridQuest {
         }
     }
 
+    function _positionCharacter() {
+        if (!gridInitialized) return;
+
+        // Posiciona o personagem         
+        let locations = tiles.getTilesByType(assets.tile`inicio`)
+        let loc = null;
+        for (let location of locations) {
+            loc = location;
+            break;
+        }
+        if (loc == null) {
+            loc = {
+                column: 0,
+                row: 0
+            }
+        }
+        grid.place(characterSprite, tiles.getTileLocation(loc.column, loc.row))
+    }
+
     /**
      * Prepara o ambiente de grid e o personagem.
      * Cria um tilemap simples e posiciona o personagem no centro.
@@ -68,20 +87,6 @@ namespace gridQuest {
         // Cria o personagem com uma imagem padrão
         characterSprite = sprites.create(assets.image`player`, SpriteKind.Player);
 
-        // Posiciona o personagem         
-        let locations = tiles.getTilesByType(assets.tile`inicio`)
-        let loc = null;
-        for (let location of locations) {
-            loc = location;
-            break;
-        }
-        if (loc ==  null) {
-            loc = {
-                column: 0,
-                row: 0
-            }
-        }
-        grid.place(characterSprite, tiles.getTileLocation(loc.column, loc.row))
         gridInitialized = true;
     }
 
@@ -107,7 +112,7 @@ namespace gridQuest {
         _initializeGridAndCharacter();
         tiles.setTilemap(map);
         // Reposiciona o personagem no início do novo mapa
-        grid.place(characterSprite, tiles.getTileLocation(0, 0));
+        _positionCharacter();
         pause(PAUSE_DURATION);
     }
 
