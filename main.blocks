@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="plcPsk.-~OTjE}7e3~({" x="0" y="0"><statement name="HANDLER"><block type="gridQuest_mudarPersonagem" id="E/_T5$n.s7N*E#TsAa$("><value name="img"><shadow type="screen_image_picker" id="U3^[XvV*k|B#ry$|Vf%F"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><next><block type="gridQuest_moveDown" id="EdQTGATl9+CT`HOiH_[e"><next><block type="gridQuest_moveRight" id="^$o^Dzt`5[P]:mrd.p!h"><next><block type="gridQuest_moveDown" id="tLZcwTb$-Akw@h5;J~*?"><next><block type="gridQuest_moveRight" id="n/-=/$;WuP8ph|3HdQA$"><next><block type="gridQuest_jumpDown" id="5FaxhUe4{$V|[wp~p+CM"></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>

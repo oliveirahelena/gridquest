@@ -1,0 +1,32 @@
+{
+    "name": "GridQuest",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "Sprite Grid": "github:microsoft/arcade-grid#v1.3.0",
+        "arcade-block-icons": "github:jwunderl/arcade-block-icons#v0.0.3"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "main.py",
+        "custom.ts",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "2.0.56",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
